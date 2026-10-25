@@ -55,3 +55,7 @@ Processed Strings: apple BANANA kiwi GRAPEFRUIT CHERRY
 ## Conclusion
 
 This project demonstrates how meaningful function names, documentation, and code refactoring can improve software quality while maintaining the original program's functionality.
+
+## Video Demo
+
+[Watch My Code Refactoring Video](https://www.loom.com/share/25b9dcb809c14cf1a047eb1f6d003914)
