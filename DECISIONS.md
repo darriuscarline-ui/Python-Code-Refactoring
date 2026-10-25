@@ -1,0 +1,7 @@
+# Refactoring Design Decisions
+
+I decided to rename the functions and variables in the original Python script to make their purposes easier to understand. The original names, such as `do_math_stuff`, `do_string_stuff`, `list1`, and `list2`, were not very descriptive. I changed them to names like `process_numbers`, `process_strings`, `numbers`, and `words`. These changes follow Python's PEP 8 naming conventions and make the code easier for someone else to read.
+
+Another improvement I made was simplifying the loops using list comprehensions. In the original program, the number-processing function used a `for` loop and the `append()` method to create a new list. I replaced that with a list comprehension that performs the same operation in fewer lines. I also updated the string-processing function to use a list comprehension and the `join()` method instead of repeatedly adding strings together. These changes make the program more organized while maintaining the same output.
+
+Finally, I added docstrings and comments to improve the documentation. The docstrings explain what each function does, what information it accepts, and what it returns. I included comments where additional explanation would be helpful. These improvements make the program easier to maintain because another developer can understand the code without needing to figure out every step on their own. After completing the refactoring, I ran the program in VS Code and verified that it produced the same results as the original script.

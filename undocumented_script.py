@@ -1,32 +1,52 @@
 
-def do_math_stuff(list_of_nums):
-    result = []
-    for num in list_of_nums:
-        if num % 2 == 0:
-            result.append(num * 2)
-        else:
-            result.append(num * 3)
-    return result
+def process_numbers(numbers):
+    """
+    Process a list of numbers based on whether they are even or odd.
+
+    Args:
+        numbers (list): A list of integers.
+
+    Returns:
+        list: Even numbers doubled and odd numbers tripled.
+    """
+    # Double even numbers and triple odd numbers.
+    return [num * 2 if num % 2 == 0 else num * 3 for num in numbers]
 
 
-def do_string_stuff(list_of_strings):
-    x = ""
-    for s in list_of_strings:
-        if len(s) > 5:
-            x += s.upper() + " "
-        else:
-            x += s.lower() + " "
-    return x.strip()
+def process_strings(strings):
+    """
+    Process a list of strings based on their length.
+
+    Args:
+        strings (list): A list of words.
+
+    Returns:
+        str: Words longer than five characters in uppercase,
+        and shorter words in lowercase.
+    """
+    # Change word capitalization based on length.
+    processed_words = [
+        word.upper() if len(word) > 5 else word.lower()
+        for word in strings
+    ]
+
+    return " ".join(processed_words)
 
 
 def main():
-    list1 = [1, 2, 3, 4, 5, 6, 7]
-    list2 = ["apple", "banana", "kiwi", "grapefruit", "cherry"]
+    """
+    Run the program and display the processed results.
 
-    processed_nums = do_math_stuff(list1)
-    processed_strings = do_string_stuff(list2)
+    Returns:
+        None
+    """
+    numbers = [1, 2, 3, 4, 5, 6, 7]
+    words = ["apple", "banana", "kiwi", "grapefruit", "cherry"]
 
-    print("Processed Numbers:", processed_nums)
+    processed_numbers = process_numbers(numbers)
+    processed_strings = process_strings(words)
+
+    print("Processed Numbers:", processed_numbers)
     print("Processed Strings:", processed_strings)
 
 

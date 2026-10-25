@@ -16,4 +16,31 @@ The original program uses `for` loops and `append()` to process numbers. It also
 
 ## Final Code Review
 
-*This section will be completed after refactoring and testing the program.*
+### Issue 1: Unclear Function and Variable Names
+
+I addressed the unclear naming conventions by renaming `do_math_stuff` to `process_numbers` and `do_string_stuff` to `process_strings`. I also replaced variables such as `list1`, `list2`, and `x` with more descriptive names. These changes make it easier to understand the purpose of each function and variable without having to examine every line of code.
+
+I verified this improvement by reviewing the updated code and confirming that the new names accurately describe their purpose.
+
+### Issue 2: Missing Docstrings and Comments
+
+I added docstrings to all three functions to explain their purpose, parameters, and return values where applicable. I also included comments explaining the number-processing and string-processing rules.
+
+These changes make the code easier for another developer to understand and maintain. I verified this improvement by reviewing each function to ensure it contained appropriate documentation.
+
+### Issue 3: Code Could Be Simplified
+
+I replaced the original number-processing loop with a list comprehension that doubles even numbers and triples odd numbers. I also simplified the string-processing function by using a list comprehension and the `join()` method instead of repeatedly concatenating strings.
+
+These changes reduced unnecessary lines of code while preserving the original functionality. I verified this by running the updated Python script in VS Code and comparing its output with the original program.
+
+### Overall Evaluation
+
+The refactored program is more readable, organized, and easier to maintain. The function and variable names clearly describe their purposes, and the docstrings provide useful documentation.
+
+I successfully ran the updated program without errors and confirmed that it produces the same output as the original:
+
+Processed Numbers: [3, 4, 9, 8, 15, 12, 21]
+Processed Strings: apple BANANA kiwi GRAPEFRUIT CHERRY
+
+All three issues identified during the initial code review have been addressed.
